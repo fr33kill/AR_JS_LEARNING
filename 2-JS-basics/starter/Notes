@@ -1,0 +1,144 @@
+INTRODUCTION ---
+
+* JavaScript is a lightweight, cross-platform, object-oriented computer programming language.
+    * Lightweight - Doesn't use much memory, relatively simple syntax and features.
+    * Cross-platform - means that the language can be used on multiple platforms and systems and not just for web development.
+    * Object-oriented - means that this language is based on objects.
+
+* Along with HTML and CSS, JavaScript is one of the three core technologies of web development.
+* Today, JavaScript can be used in different places:
+    * Client side: JavaScript was traditionally used only in the browser environment which means it was only a client side language.
+    * Lately, because of node.js, we can use it as server side language as well.
+    
+* JavaScript is what made modern web development possible.
+    * It not only allows dynamic effects to simple website and interactivity but also complex modern web applications that we can interact with almost every app that we use every single day.
+    
+* Frameworks/libraries like React and Angular are 100% based on Javascript.
+
+
+* HTML, CSS and JS work together to create interactive dynamic web applications.
+    * All the contents on the webpage is created using HTML. 
+    * CSS is responsible for presentation of the content. Mostly styling.
+    * JS for adding real programming capability, interactivity to websites. 
+    
+* HTML is noun says that <p> element is noun. 
+* CSS is adjective, because it describes the noun saying paragraph text should be of specific colour.
+* JS is verb which says something like hide the paragraph.
+
+
+VARIABLES AND DATA TYPES ---
+
+* Variable is like container in which we can store a value in order to use it over and over again instead of having to write the value each time that we want to use it.
+* In JS, there are 5 different Data Types - (Primitive Data types - they are non object data types.)
+    * Number - always floating point numbers.
+    * String - a sequence of characters (text).
+    * Boolean - logical data type either true or false.
+    * Undefined - automatically assigned to a variable that does not have a value yet.
+    * Null - Also means non-existent.
+    
+* JS has a feature called DYNAMIC TYPING, data types are automatically assigned to variables. 
+
+* Declaring variables with meaning full name and with camelcase notation.
+
+* Variable names cannot start with numbers or symbols except for the dollar($) sign, Underscore(_) sign and letter, cannot have symbols in between and cannot have JS reserve keyword.
+
+
+VARIABLE MUTATION AND TYPE COERCION --- 
+
+* There are single line comments and multiline comments. 
+    * Single line comment can be written by prefixing double slashes like this "//".
+    * Multi line comments can be written by prefixing "/*" and ending it again by "*/".
+    
+* Type Coercion means JS automatically converts one type to another conviniently. Other programming languages needs explicit conversion.
+
+* Variable Mutation is JS feature which converts the data type of a variable that was previously declared. Say for example 
+    var age = 28; //number
+    console.log(age); //prints 28
+    age = 'twenty eight'; 
+    console.log(age); //prints twenty eight. age which was Number is converted to String.
+    
+BASIC OPERATORS ---
+
+* Subtract, Add, Multiply and Divide are basic MATH operators.
+* Boolean which has logical value true or false is LOGICAL operator.
+* Typeof operator returns what type of the variable is.
+
+OPERATOR PRECEDENCE --- 
+
+* Many operators in one line and how does JS know whichone to perform first or what sequence it should follow?
+* Parenthesis has the highest precedence.
+* Assignment operator = is also an operator which has least precedence, so equated atlast.
+* There is a table which shows the precedence over one operator than the other.
+* Multiple assignments are allowed in JS.
+    for eg var x,y;
+    x = y = 25;
+* Each operator has an associativity which means whether to go from left to right or right to left.
+    For eg: = operator goes from right to left
+            + operator goes from left to right
+            
+IF/ELSE STATEMENTS --- 
+
+* These are conditional statements. Inside the braces of 'if' will be a condition, if the condition is passes, if block will be executed.
+* if the condition fails, else block will get executed.
+
+BOOLEAN LOGIC ---
+
+* Boolean logic is used in else if condition where the two conditions has to be met or either one of the conditions to be met. 
+
+* Different boolen logic operators are -
+    * AND - both conditions must be true.
+    * OR - either one of the conditions must be true.
+    * NOT - reverses the result of the condition.
+
+TERNARY OPERATOR AND SWITCH STATEMENTS ---
+
+* Ternary operators are used for simple if else statement. It is called ternary because it has three operators.
+
+* Switch statements are used if there are multiple if else conditions to be validated. 
+
+TRUTHY AND FALSY VALUES, EQUALITY OPERATOR ---
+
+* In JS, a Falsy value is value that is considered false when evaluated in if/else statement condition.
+* And the values that are falsy in the JS are undefined, null, 0 , empty strings and NaN values.
+* They are not false, but turn out to be false when evaluated and thus the name falsy values.
+
+* Truthy value is value that is considered true when evaluated in if/else statement condition.
+* All the values that are not falsy.
+
+
+* EQUALITY OPERATOR with triple === operator is strict comparison.
+* There is another comparison with double == operator which does type coercion and compares. Means - the variables doesnt have to be of same data type. 
+
+FUNCTIONS ---
+
+* If you want a run a piece of code a lot of times, you can put that code in the function instead of writing it over and over again.
+
+* Function are like containers which can hold lines of code and we pass arguments and they can then return us results.
+
+* Functions are most important for one of the important principle of programming language called DRY principle. (Dont Repeat Yourself.)
+
+* Never write same code again and again.
+
+FUNCTION STATEMENTS AND FUNCTION EXPRESSIONS - --
+
+* When we write function expressions, we start by writing function keyword without a name, put in argument list. 
+
+* and we assign this function to a variable. 
+
+* Function expression is a variable which has function as a value to it.
+
+* Statements and expressions, they are global concepts in JS.
+
+* JS Expressions are piece of code that always produces a value. It doesnt matter, how long they are. They will result in a single value, then its an expression.
+    For ex: type of 23 // Number
+            2 + 3 // 5
+            var functionExpression = function() {
+            
+            } //function expression.
+                       
+* JS Statements, they also perform some action but they dont produce immediate result.
+    For ex: if(true) {console.log(23)} //will print 23 and undefined. 23 is printed from console.log but statement itself doesnt return anything, means doesnt produce result.
+    
+* In conclusion, Function expressions produce immediate result whereas Function declarations doesnt. 
+
+ARRAYS ---
