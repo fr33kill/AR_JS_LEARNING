@@ -1,5 +1,26 @@
 INTRODUCTION ---
 
+* JavaScript was first called as LiveScript and changed to JavaScript in 1996 to attract Java developers. JavaScript has almost nothing to with Java.
+
+* In 1997, JavaScript was submitted to ECMA International in order to create a new standard. ECMAScript1 or ES1 became the first version of JavaScript.
+
+* In real world, we use ECMASCript for language standard and JavaScript for language in practice.
+
+* In 2009, ES5 was released with lot of new features. 
+
+* And in 2015, ES6/ES2015 was released, the biggest update to the language ever! ES2015 is official name but most people call ES6.
+
+* After this, it started releasing every year with new features instead of waiting for two-three years. 
+
+* ES5 supported in all browsers and is ready to use.
+
+* ES6/ES7/ES8 - well supported in modern browsers but has got no support in old browsers.
+
+* To overcome this, we can basically convert these newer versions to ES5 using process called
+transpiling and polyfilling.
+
+* ES9 and ES10 are sometimes called ESNext. Some browsers even support this. 
+
 * JavaScript is a lightweight, cross-platform, object-oriented computer programming language.
     * Lightweight - Doesn't use much memory, relatively simple syntax and features.
     * Cross-platform - means that the language can be used on multiple platforms and systems and not just for web development.
@@ -142,3 +163,59 @@ FUNCTION STATEMENTS AND FUNCTION EXPRESSIONS - --
 * In conclusion, Function expressions produce immediate result whereas Function declarations doesnt. 
 
 ARRAYS ---
+
+* They are collection of variables. Can have different datatypes.
+
+* They are zero based. First element is 0th index and so on.
+
+* There are various methods that array has which helps in editing any given array.
+
+* push() method adds the object at the end of the array.
+
+* unshift() method also adds the object to the array but at the beginning of the array.
+
+* pop() method deletes the element at the end of the array.
+
+* shift() method deletes the element at the start of the array.
+
+* indexOf() method retrieves the index of the value that is available in the array. It can be used to test if a particular element is available in the array or not. It will return -1 if the value is unavailable in the array.
+
+OBJECTS AND PROPERTIES ---
+
+* Objects are defined as key-value pairs. key being the name of the value.
+
+* Access values instead of index(Array) but name.
+
+* We can use objects to group different variables that belong together but has no particular order.
+
+* One fundamental difference between arrays and objects is that, In arrays order matters a lot but in object it doesnt matter at all.
+
+* Two ways of Initialising an object - 
+        * Object Literal
+            var john = {
+                firstName: 'John'
+            }
+        * New Object syntax
+            var jane = new Object();
+            jane.firstName = 'Jane';
+            
+METHODS --- 
+
+* We can even attach functions to objects and these functions are called methods.
+
+* And can use "this" keyword to actually access one of the properties of object in the method to calculate something.
+
+* As in the example js, we have used this keyword to access birthyear and calculate the age, we can use this keyword to set the age as well. Please refer Example in 16_Objects_and_Methods.js
+
+LOOPS AND ITERATIONS ---
+
+* If you have a very repitive tasks, instead of typing samething again and again, we run these into loops.
+
+* for loop has three parts - initial value, condition and counter update(increment).
+
+* while loop also does the same. But the difference between the while and for loop is, only has the condition. it will loop till the condition is true.
+
+* break statement is to exit the loop even before the loop ends.
+
+* continue statement is to skip that particular iteration and continue with the next iteration.
+
