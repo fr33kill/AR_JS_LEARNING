@@ -1,0 +1,14 @@
+DOM AND DOM MANIPULATION ---
+
+* DOM - Document Object Model. It is structured representation of HTML document.
+
+* The DOM is used to connect webpages to scripts like JavaScript.
+
+* For each HTML tag, there is an object in the DOM that we can access and interact with from our JS code.
+
+* JS and DOM are two different things. There are special JS methods that allow us to interact and manipulate which means change the DOM and therfore webpage.
+
+* The methods that are nothing but functions attached to some object and this object is called document object. This is the object that gives access to the DOM.
+
+* The HTML webpage content is stored in the DOM, which can then be accessed and manipulated by JavaScript.
+
