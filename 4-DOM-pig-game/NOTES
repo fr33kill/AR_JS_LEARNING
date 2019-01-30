@@ -12,3 +12,25 @@ DOM AND DOM MANIPULATION ---
 
 * The HTML webpage content is stored in the DOM, which can then be accessed and manipulated by JavaScript.
 
+
+DOM ACCESS AND MANIPULATION ---
+
+* Check app.js for explanation along with the game code.
+
+* DOM Manipulation - The object that gives access to DOM is document object. There are various methods to get elements from webpage. Popular one is querySelector(). It lets us select stuff exactly the way we do it in CSS. Only difference it will select only the first element it finds. But, we can overcome that as well. 
+
+* Use id attribute in querySelector to change the value. textContent is the property to change the value of the field with respect to the id.
+
+EVENTS ---
+
+* Events are notifications that are sent to notify the code that something happened on the webpage like clicking a button, resizing a window, scrolling down or pressing a key. 
+
+* Event Listener is a function that performs an action based on a certain event like showing animations, showing a pop up window etc., It waits for a specific event to happen. 
+
+* A rule is that an event can only be processed or handled only after execution stack is empty. Which means, all of the functions have returned. 
+
+* Besides execution stack, we also have Message Queue in the Javascript Engine. This is where all the events in the browser are put and they sit there, waiting to be processed. And this happens only when the execution stack is emptied. 
+
+* Event Listener is a function that reacts to an event. Since its a function, it gets its own Execution Context which is then put at the top of the stack and becomes active Execution context. 
+
+* This is how events work.
