@@ -1,0 +1,77 @@
+EVERYTHING IS AN OBJECT: INHERITANCE AND PROTOTYPE ---
+
+* In JavaScript, we have two different types of values - Primitives and Objects.
+
+* Primitives are the ones that are of these data types -
+    - Numbers
+    - Strings
+    - Booleans
+    - Undefined
+    - Null
+    
+* Everything else is an object -
+    - Arrays
+    - Functions
+    - Objects
+    - Dates
+    - Wrappers for Numbers, Strings, Booleans
+    
+* In JS, objects are not just used for storing bunch of data but for really complex things under the surface. This is one fundamental thing that makes JS so unique and different.
+
+OBJECT ORIENTED PROGRAMMING --
+
+* Objects interact with one another through methods and properties.
+
+* Used to store data, data structure applications into modules and keeping code clean.
+
+* We can create blueprint of object and create many objects with that blue print. In other programming languages this is many times called a class. In JS, it is called a constructor or Prototype.
+
+* With this constructor, we can create many instances of an object.  For instance - John, Jane and mark are instances of common Person constructor.
+
+* Constructors are blueprint which can be used to create many instances which is also called objects.
+
+INHERITANCE --
+
+* Inheritance is when one object is based on other objects.
+
+* Its when one object gets access to another object's properties and methods.
+
+* For instance - if we want a Athlete constructor besides the Person constructor with couple of different properties and methods. Athlete is also a person, where there are some particular properties and methods for an athlete like how many participations in olympics or how many medals they have won.
+
+* If we want to create a constructor for Athlete why to repeate all the Person's methods and properties again, instead we can inherit the methods and properties of Person in Athlete object. This is INHERITANCE.
+
+* JS is prototype based language. This means inheritance works by using something called prototypes. In practice, each and every Javascript object has a prototype property, which makes inheritance possible in JS.
+
+To put it in perspective -
+
+    Person object is constructor and John is one of the instances. Now, if we want John to inherit a method or a property from Person's object, we want to mention that method or property to a prototype of Person's object.
+    
+    Prototype property of an object is where we put methods and properties that we want other objects to inherit. Person's prototype property is  prototype of John and Person object itself an instance of an even bigger constructor which is Object's object.
+    
+    John inherits from Person and Person inherits from Object which has its own prototype like isPrototypeOf(), toString(), valueOf() etc., This is called Prototype Chain.
+    
+Prototype Chain - When we try to access a certain method or property on an object, JS will first find that method on that exact object. If it cannot find, it will look in object's prototype, which is the prototype property of its parent. So, it moves up in the prototype chain. If the method is not there, it will continue to look at till it cannot find prototype to look at which is null. 
+
+Null is the one which doesnt have any prototype and is therefore the final link in the prototype chain and in this case undefined is returned. And because of this, John can access the toString() method of Object's.
+
+SUMMARY --
+
+   * Every JS object has a prototype property, which makes inheritance possible in JS.
+   
+   * The prototype property of an object is where we put methods and properties that we want other objects to inherit.
+   
+   * The Constructor's prototype property is NOT the prototype of the Constructor itself, it's the prototype of ALL instances that are created through it;
+   
+   * When a certain method (or property) is called, the search starts in the object itself and if it cannot be found, the search moves on to the next object's prototype. This continues until the method is found. This is called Prototype Chain.
+   
+   
+   THE PROTOTYPE CHAIN IN THE CONSOLE ---
+    
+    
+    
+    
+    
+    
+    
+    
+    
